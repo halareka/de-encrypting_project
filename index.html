@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>bruh</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body align="center">
+    <div class="main">
+        <div class="log" onclick="window.location.href = 'dec.html'">
+            <h3 style="padding-top: 14px;">encrypt</h3>
+        </div>    
+        <div class="menu">
+            <input type="text" id="word" placeholder="Введите текст на англ" >
+            <button id="btn">make</button>
+        </div>
+    
+        <div class="menu2">
+            <h3 align="center" style="margin-top: -7px;" onclick="copyToClipboard()" class="result">copy result</h3>
+            <span id="result" class="menu3"></span>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+<script>
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    window.onload = function() {
+        document.body.style.backgroundColor = getRandomColor();
+    };
+</script>
+<script src="script.js">
+    
+</script>
+
+</body>
+</html>

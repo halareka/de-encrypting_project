@@ -1,0 +1,81 @@
+
+:root {
+    --color: rgb(169, 235, 210);
+    --color2 :rgb(137, 207, 180);
+    --color3 :rgb(223, 124, 223);
+}
+.main{
+    width: 330px;
+    border-radius: 20px;
+    margin: auto;
+
+}
+.log {
+    font-family: system-ui;
+    background-color: var(--color);
+    height: 60px;
+    width: 330px;
+    border-radius: 20px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+
+
+.log:hover {
+    background: var(--color3);
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    font-family: system-ui;
+    background-color: var(--color);
+    width: 300px;
+    height: 30px;
+    /* margin: auto; */
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 15px;
+
+}
+.menu2 {
+    text-align: left;
+    font-family: system-ui;
+    background-color: var(--color);
+    width: 310px;
+    /* margin: auto; */
+    margin-top: 5px;
+    border-radius: 20px;
+    word-wrap: break-word;
+    padding: 10px;
+}
+input{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color);
+    transition: border 0.1s, color 0.1s;
+}
+input:hover{
+    border: solid var(--color2) ;
+}
+button{
+    transition: padding 0.1s;
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 5px;
+}
+button:hover{
+    padding: 0 20px;
+}
+.result {
+    text-align: center;
+    /* color: var(--color2); */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.result:hover {
+    opacity: 1;
+}
+

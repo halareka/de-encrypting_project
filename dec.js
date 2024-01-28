@@ -40,7 +40,7 @@ function start(){
     }    
     div_arr();
     let aw = String(result);
-    let av = aw.replace(/,/g, '');
+    let av = aw.replace(/,/g, '').replace(/z/g, ' ');
     document.getElementById("result").innerHTML = av;
 
 }

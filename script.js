@@ -16,9 +16,7 @@ document.getElementById("btn").onclick = function(){
 function start(){
     let key_one;
     let abc = 0;
-    const result = [];
-    const arr_key_one = [];
-    const array_word = [];
+    const result = [], arr_key_one = [], array_word = [];
     function division_one(word, len){
         let a = 0;
         while(a < len){
